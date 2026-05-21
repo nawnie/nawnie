@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nawnie/ai-without-fear/main/AIWF_Atlas_VOL1_machine_facing_v3_3_api_cli_guide/16_VISUAL_ASSETS/torchie_callouts/torchie_hero_reference.png" alt="Torchie — AI Without Fear" width="140"/>
+  <img src="https://raw.githubusercontent.com/nawnie/ai-without-fear/main/AIWF_Atlas_VOL1_machine_facing_v3_3_api_cli_guide/16_VISUAL_ASSETS/torchie_callouts/Aiwf%20logo.png" alt="AI Without Fear" width="160"/>
 </p>
 
 <h1 align="center">Hey, I'm Shawn</h1>
@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/nawnie/ai-without-fear"><img src="https://img.shields.io/badge/AIWF%20Atlas-v3.3%20research%20preview-orange?style=flat-square" alt="AIWF Atlas"/></a>
-  <img src="https://img.shields.io/badge/Hardware-RTX%204060%2016GB%20%7C%20RTX%204060%208GB-76b900?style=flat-square" alt="Hardware"/>
+  <img src="https://img.shields.io/badge/Hardware-RTX%204070%20Super%20Ti%20%7C%20RTX%204070%20Laptop-76b900?style=flat-square" alt="Hardware"/>
   <img src="https://img.shields.io/badge/Location-Tennessee%2C%20US-blue?style=flat-square" alt="Location"/>
 </p>
 
