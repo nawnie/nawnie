@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nawnie/ai-without-fear/main/AIWF_Atlas_VOL1_machine_facing_v3_3_api_cli_guide/16_VISUAL_ASSETS/torchie_callouts/Aiwf%20logo.png" alt="AI Without Fear" width="160"/>
+  <img src="assets/AIWF_LOGO.png" alt="AI Without Fear" width="160"/>
 </p>
 
 <h1 align="center">Hey, I'm Shawn</h1>
@@ -21,6 +21,8 @@
 **[AI Without Fear Atlas](https://github.com/nawnie/ai-without-fear)** — A grounded RAG corpus for local AI workflows. Covers ComfyUI nodes and API, Gradio 6, model serving, Python/pip troubleshooting, and evaluation harnesses. Built so AI assistants can retrieve real answers instead of hallucinating setup steps.
 
 The problem it solves: most AI assistants confidently get ComfyUI node names wrong, recommend outdated Gradio patterns, and hallucinate venv paths. This corpus gives them grounded retrieval material instead.
+
+**[Atlas Reader LoRA Lab](https://github.com/nawnie/atlas-lora-adapter)** — A research scaffold testing whether a small LoRA adapter can learn how to read a structured Atlas: lanes, cards, source rules, and compact context packs. No performance claims yet; the point is to build the test bench and publish the outcome honestly.
 
 ---
 
