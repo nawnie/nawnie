@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/nawnie/ai-without-fear"><img src="https://img.shields.io/badge/AIWF%20Atlas-v3.3%20research%20preview-orange?style=flat-square" alt="AIWF Atlas"/></a>
   <img src="https://img.shields.io/badge/Hardware-RTX%204070%20Super%20Ti%20%7C%20RTX%204070%20Laptop-76b900?style=flat-square" alt="Hardware"/>
-  <img src="https://img.shields.io/badge/Location-Tennessee%2C%20US-blue?style=flat-square" alt="Location"/>
+  <img src="https://img.shields.io/badge/Location-North Carolina%2C%20US-blue?style=flat-square" alt="Location"/>
 </p>
 
 ---
