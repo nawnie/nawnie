@@ -22,7 +22,7 @@
 
 The problem it solves: most AI assistants confidently get ComfyUI node names wrong, recommend outdated Gradio patterns, and hallucinate venv paths. This corpus gives them grounded retrieval material instead.
 
-**[Atlas Reader LoRA Lab](https://github.com/nawnie/atlas-lora-adapter)** — A working research/evaluation lab for testing whether a lightweight QLoRA adapter can learn to read structured Atlas context: lanes, cards, source rules, compact evidence packs, and off-ramp behavior when evidence is missing. The current best internal run preserves compact-card performance, improves targeted retrieval behavior, and records a compact selected-card path averaging about 5.05x fewer total tokens than the available raw workspace/RAG comparison under this lab setup. It is not presented as a production package or universal benchmark claim.
+**[Atlas Reader LoRA Lab](https://github.com/nawnie/atlas-lora-adapter)** — A working research/evaluation lab for testing whether a lightweight QLoRA adapter can learn to read structured Atlas context: lanes, cards, source rules, compact evidence packs, and off-ramp behavior when evidence is missing. The current best internal run preserves compact-card performance, improves targeted retrieval behavior, and records compact selected-card paths using about 5.05x-20x fewer total tokens than raw workspace/RAG-style comparisons in specific lab use cases. It is not presented as a production package, external benchmark, or universal token-reduction claim.
 
 ---
 
