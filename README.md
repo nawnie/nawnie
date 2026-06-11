@@ -16,13 +16,18 @@
 
 ---
 
-## What I Build
-
-**[AI Without Fear Atlas](https://github.com/nawnie/ai-without-fear)** — A grounded RAG corpus for local AI workflows. Covers ComfyUI nodes and API, Gradio 6, model serving, Python/pip troubleshooting, and evaluation harnesses. Built so AI assistants can retrieve real answers instead of hallucinating setup steps.
+**AI Without Fear Atlas** — A grounded RAG corpus for local AI workflows. Covers ComfyUI nodes and API, Gradio 6, model serving, Python/pip troubleshooting, and evaluation harnesses. Built so AI assistants can retrieve real answers instead of hallucinating setup steps.
 
 The problem it solves: most AI assistants confidently get ComfyUI node names wrong, recommend outdated Gradio patterns, and hallucinate venv paths. This corpus gives them grounded retrieval material instead.
 
-**[Atlas Reader LoRA Lab](https://github.com/nawnie/atlas-lora-adapter)** — A working research/evaluation lab for testing whether a lightweight QLoRA adapter can learn to read structured Atlas context: lanes, cards, source rules, compact evidence packs, and off-ramp behavior when evidence is missing. The current best internal run preserves compact-card performance, improves targeted retrieval behavior, and records compact selected-card paths using about 5.05x-20x fewer total tokens than raw workspace/RAG-style comparisons in specific lab use cases. It is not presented as a production package, external benchmark, or universal token-reduction claim.
+**Atlas Reader LoRA Lab** — A working research/evaluation lab for testing whether a lightweight QLoRA adapter can learn to read structured Atlas context: lanes, cards, source rules, compact evidence packs, and off-ramp behavior when evidence is missing. The current best internal run preserves compact-card performance, improves targeted retrieval behavior, and records compact selected-card paths using about 5.05x–20x fewer total tokens than raw workspace/RAG-style comparisons in specific lab use cases.
+
+It is not presented as a production package, external benchmark, or universal token-reduction claim.
+
+**AIWF Studio** — An early public build of a local-first Stable Diffusion workspace and clean-room AUTOMATIC1111-style WebUI rebuild. The project focuses on a cleaner internal architecture: typed request/config models, repo-local runtime folders, service-routed UI actions, model management, txt2img/img2img/inpaint workflow surfaces, PNG info, history, settings, enhancement, segmentation, and early `/api/v1` plus A1111-style `/sdapi/v1` adapter work.
+
+The problem it solves: local diffusion tools are powerful, but many grew quickly into difficult-to-maintain stacks with broad shared state, tightly coupled UI/runtime behavior, and confusing extension paths. AIWF Studio is not presented as a finished replacement for AUTOMATIC1111, Forge, or ComfyUI. It is a public foundation for exploring a more maintainable, contributor-friendly local diffusion workspace.
+
 
 ---
 
