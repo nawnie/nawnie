@@ -84,6 +84,7 @@ A working research/evaluation lab for testing whether a lightweight QLoRA adapte
 
 - lanes
 - cards
+- base64 encoded routing
 - source rules
 - compact evidence packs
 - selected-card paths
