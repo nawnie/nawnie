@@ -104,7 +104,7 @@ Status: early runnable slice. The next job is to collect real local traces, meas
 
 ### RNV1
 
-[RNV1](https://github.com/nawnie/MOKSHA) is the investor-facing page for the embodied local AI program that was previously staged as MOKSHA. It keeps the core implementation private and points to public proof-of-work, especially ReTrain, Model Operating Kernel, and AIWF Research Atlas.
+[RNV1](https://github.com/nawnie/Rnv1) stands for Ribonucleic Vectors v1. It is the investor-facing page for the embodied local AI program. It keeps the core implementation private and points to public proof-of-work, especially ReTrain, Model Operating Kernel, and AIWF Research Atlas.
 
 ### Atlas Reader LoRA Lab
 
