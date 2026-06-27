@@ -100,11 +100,11 @@ Status: early runnable slice. The next job is to collect real local traces, meas
 
 ### ReTrain
 
-[ReTrain](https://github.com/nawnie/ReTrain) is a local-first training workbench for consumer GPU fine-tuning. The current MVP uses Gradio 6 with QLoRA, tune-scope controls, Hugging Face download staging, VRAM checks, TensorBoard, dry-run receipts, and a JSON FastAPI bridge for a later React UI.
+[ReTrain](https://github.com/nawnie/ReTrain) is a local-first training workbench for consumer GPU fine-tuning. It is also public proof-of-work for RNV1: working software we built to train, test, and document local model-improvement flows instead of only describing the idea.
 
-### MOKSHA
+### RNV1
 
-[MOKSHA](https://github.com/nawnie/MOKSHA) is the broader research architecture behind part of this work: a portable operating layer for embodied intelligent systems. It is funding-facing and early, so I keep it separate from the runnable repos.
+[RNV1](https://github.com/nawnie/MOKSHA) is the investor-facing page for the embodied local AI program that was previously staged as MOKSHA. It keeps the core implementation private and points to public proof-of-work, especially ReTrain, Model Operating Kernel, and AIWF Research Atlas.
 
 ### Atlas Reader LoRA Lab
 
