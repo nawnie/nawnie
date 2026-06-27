@@ -6,18 +6,18 @@
 
 <p align="center">
   <strong>AI Without Fear</strong><br/>
-  Practical local AI tools, grounded retrieval systems, and diffusion workflows built for real hardware.
+  Local AI tools for real hardware: Windows, consumer GPUs, local models, diffusion workflows, training tools, and source-backed retrieval.
 </p>
 
 <p align="center">
-  <a href="https://github.com/nawnie/ai-without-fear">
-    <img src="https://img.shields.io/badge/Atlas-grounded%20RAG-orange?style=for-the-badge" alt="AIWF Atlas"/>
-  </a>
-  <a href="https://github.com/nawnie/atlas-lora-adapter">
-    <img src="https://img.shields.io/badge/Atlas%20Reader-QLoRA%20Lab-8A2BE2?style=for-the-badge" alt="Atlas Reader LoRA Lab"/>
-  </a>
   <a href="https://github.com/nawnie/AIWF-Studio">
-    <img src="https://img.shields.io/badge/AIWF%20Studio-local%20diffusion-00b894?style=for-the-badge" alt="AIWF Studio"/>
+    <img src="https://img.shields.io/badge/AIWF%20Studio-local%20creative%20AI-00b894?style=for-the-badge" alt="AIWF Studio"/>
+  </a>
+  <a href="https://github.com/nawnie/ai-without-fear">
+    <img src="https://img.shields.io/badge/Atlas-grounded%20retrieval-orange?style=for-the-badge" alt="AIWF Research Atlas"/>
+  </a>
+  <a href="https://github.com/nawnie/Model-Operating-Kernel">
+    <img src="https://img.shields.io/badge/MoK-model%20runtime-blue?style=for-the-badge" alt="Model Operating Kernel"/>
   </a>
 </p>
 
@@ -29,74 +29,15 @@
 
 ---
 
-## What I'm Building
+## What I'm building
 
-I build practical local AI systems for people working on real machines, not cloud fantasy hardware.
+I build local AI tools for people running real machines at home. The target is not a clean cloud demo. It is a Windows box with an RTX GPU, mixed model folders, broken paths, and a user who still wants the tool to work.
 
-- **Grounded retrieval** — source-backed AI answers instead of hallucinated setup steps.
-- **Local diffusion tools** — cleaner image-generation workflows for local hardware.
-- **Evaluation-first experiments** — narrow claims, recorded results, honest limits.
+AI Without Fear is the umbrella for that work: local creative AI, grounded retrieval, model routing, and training interfaces that normal users can inspect.
 
 ---
 
-## Featured Projects
-
-### AI Without Fear Atlas
-
-<p>
-  <a href="https://github.com/nawnie/ai-without-fear">
-    <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Atlas-orange?style=for-the-badge" alt="AIWF Atlas repo"/>
-  </a>
-  <img src="https://img.shields.io/badge/Type-grounded%20RAG-orange?style=for-the-badge" alt="Grounded RAG"/>
-  <img src="https://img.shields.io/badge/Status-research%20preview-blue?style=for-the-badge" alt="Research preview"/>
-</p>
-
-A grounded RAG corpus for local AI workflows.
-
-**Covers:**
-
-- ComfyUI nodes and API behavior
-- Gradio 6 patterns
-- model serving
-- Python and pip troubleshooting
-- evaluation harnesses
-- local AI workflow notes
-
-**Problem it solves:** most AI assistants confidently get ComfyUI node names wrong, recommend outdated Gradio patterns, and hallucinate venv paths. Atlas gives them grounded retrieval material instead.
-
-[**View AI Without Fear Atlas →**](https://github.com/nawnie/ai-without-fear)
-
----
-
-### Atlas Reader LoRA Lab
-
-<p>
-  <a href="https://github.com/nawnie/atlas-lora-adapter">
-    <img src="https://img.shields.io/badge/View%20Repo-Atlas%20Reader%20Lab-8A2BE2?style=for-the-badge" alt="Atlas Reader LoRA Lab repo"/>
-  </a>
-  <img src="https://img.shields.io/badge/Type-QLoRA%20research-8A2BE2?style=for-the-badge" alt="QLoRA research"/>
-  <img src="https://img.shields.io/badge/Status-internal%20lab-lightgrey?style=for-the-badge" alt="Internal lab"/>
-</p>
-
-A working research/evaluation lab for testing whether a lightweight QLoRA adapter can learn to read structured Atlas context.
-
-**Tests:**
-
-- lanes
-- cards
-- base64 encoded routing
-- source rules
-- compact evidence packs
-- selected-card paths
-- off-ramp behavior when evidence is missing
-
-**Current internal result:** the best internal run preserves compact-card behavior, improves targeted retrieval behavior, and records compact selected-card paths using about **5.05x–20x fewer total tokens** than raw workspace/RAG-style comparisons in specific lab use cases.
-
-> This is **not** presented as a production package, external benchmark, or universal token-reduction claim.
-
-[**View Atlas Reader LoRA Lab →**](https://github.com/nawnie/atlas-lora-adapter)
-
----
+## Featured work
 
 ### AIWF Studio
 
@@ -104,68 +45,79 @@ A working research/evaluation lab for testing whether a lightweight QLoRA adapte
   <a href="https://github.com/nawnie/AIWF-Studio">
     <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Studio-00b894?style=for-the-badge" alt="AIWF Studio repo"/>
   </a>
-  <img src="https://img.shields.io/badge/Type-local%20diffusion-00b894?style=for-the-badge" alt="Local diffusion"/>
   <img src="https://img.shields.io/badge/Status-early%20public%20build-yellow?style=for-the-badge" alt="Early public build"/>
 </p>
 
-An early public build of a local-first Stable Diffusion workspace and clean-room AUTOMATIC1111-style WebUI rebuild.
+AIWF Studio is a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
 
-**Built around:**
+It rebuilds the familiar Stable Diffusion web UI idea with typed requests, explicit backend services, repo-local model folders, and less global state. The public branch focuses on image generation, inpaint, ControlNet, enhancement, segmentation, Wan video, LTX, Flux, and the newer React Pro UI.
 
-- typed request and config models
-- repo-local runtime folders
-- service-routed UI actions
-- model management
-- txt2img, img2img, and inpaint workflow surfaces
-- PNG info, history, settings, enhancement, and segmentation
-- early `/api/v1` plus A1111-style `/sdapi/v1` adapter work
+Status: early public build. Not a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.
 
-**Problem it solves:** local diffusion tools are powerful, but many grew quickly into difficult-to-maintain stacks with broad shared state, tightly coupled UI/runtime behavior, and confusing extension paths.
-
-> AIWF Studio is **not** presented as a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.  
-> It is a public foundation for exploring a more maintainable, contributor-friendly local diffusion workspace.
-
-[**View AIWF Studio →**](https://github.com/nawnie/AIWF-Studio)
+[View AIWF Studio](https://github.com/nawnie/AIWF-Studio)
 
 ---
 
-## What Connects These Projects
-
-### Grounded local AI
-
-AI systems should retrieve real project knowledge before answering. Atlas focuses on source-aware retrieval, answer gating, compact evidence packs, and failure behavior when evidence is missing.
-
-### Maintainable diffusion tools
-
-AIWF Studio explores what a familiar local diffusion workspace can look like when service boundaries, typed requests, and repo-local runtime behavior are part of the foundation.
-
-### Consumer hardware research
-
-The work is built around practical constraints: Windows setups, local models, 16GB/8GB VRAM machines, and workflows normal users can actually run.
-
-### Evaluation-first experiments
-
-The goal is not just to make demos. The goal is to record what works, what fails, and where claims need to stay narrow.
-
----
-
-## Focus Areas
+### AIWF Research Atlas
 
 <p>
-  <img src="https://img.shields.io/badge/Local%20AI-consumer%20hardware-111827?style=for-the-badge" alt="Local AI"/>
-  <img src="https://img.shields.io/badge/ComfyUI-workflows%20%26%20API-black?style=for-the-badge" alt="ComfyUI"/>
-  <img src="https://img.shields.io/badge/RAG-grounded%20retrieval-orange?style=for-the-badge" alt="RAG"/>
-  <img src="https://img.shields.io/badge/Gradio-6-ff7c00?style=for-the-badge" alt="Gradio 6"/>
-  <img src="https://img.shields.io/badge/QLoRA-evaluation%20lab-8A2BE2?style=for-the-badge" alt="QLoRA"/>
-  <img src="https://img.shields.io/badge/Stable%20Diffusion-local%20workspace-00b894?style=for-the-badge" alt="Stable Diffusion"/>
+  <a href="https://github.com/nawnie/ai-without-fear">
+    <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Atlas-orange?style=for-the-badge" alt="AIWF Research Atlas repo"/>
+  </a>
+  <img src="https://img.shields.io/badge/Status-v3.3%20research%20preview-blue?style=for-the-badge" alt="Research preview"/>
 </p>
 
-- **Local AI** — Running and testing models on consumer hardware.
-- **ComfyUI** — Workflows, node behavior, API automation, and datatype boundaries.
-- **RAG & Retrieval** — Corpus design, chunking strategy, source governance, and answer gating.
-- **Gradio 6** — App building, local UI workflows, and cleaner user-facing tools.
-- **Model Training** — LoRA/QLoRA experiments, evaluation records, and domain-specific adapters.
-- **Diffusion UX** — Making local image tooling easier to understand and maintain.
+AIWF Research Atlas is a source-backed retrieval corpus for local AI assistants.
+
+Atlas keeps source policy, retrieval cards, topic lanes, Gradio 6 material, ComfyUI notes, evaluation prompts, and provenance files in one indexable tree. The job is simple: make assistants check grounded project context before they invent setup steps.
+
+Status: v3.3 research preview. Fast-moving package, model, API, benchmark, license, and compatibility claims still need live source checks before use.
+
+[View AIWF Research Atlas](https://github.com/nawnie/ai-without-fear)
+
+---
+
+### Model Operating Kernel
+
+<p>
+  <a href="https://github.com/nawnie/Model-Operating-Kernel">
+    <img src="https://img.shields.io/badge/View%20Repo-Model%20Operating%20Kernel-blue?style=for-the-badge" alt="Model Operating Kernel repo"/>
+  </a>
+  <img src="https://img.shields.io/badge/Status-early%20runnable%20slice-yellow?style=for-the-badge" alt="Early runnable slice"/>
+</p>
+
+Model Operating Kernel is a local runtime layer for coordinating model and expert backends on consumer hardware.
+
+MoK registers experts, routes requests, tracks VRAM pressure, calls local or HTTP-backed models, writes JSONL traces, and exports data for routing evaluation. It is not an in-model MoE system. It is the control layer around models.
+
+Status: early runnable slice. The next job is to collect real local traces, measure VRAM behavior, and test routing quality against repeatable eval sets.
+
+[View Model Operating Kernel](https://github.com/nawnie/Model-Operating-Kernel)
+
+---
+
+## Newer 2026 work
+
+### ReTrain
+
+[ReTrain](https://github.com/nawnie/ReTrain) is a local-first training workbench for consumer GPU fine-tuning. The current MVP uses Gradio 6 with QLoRA, tune-scope controls, Hugging Face download staging, VRAM checks, TensorBoard, dry-run receipts, and a JSON FastAPI bridge for a later React UI.
+
+### MOKSHA
+
+[MOKSHA](https://github.com/nawnie/MOKSHA) is the broader research architecture behind part of this work: a portable operating layer for embodied intelligent systems. It is funding-facing and early, so I keep it separate from the runnable repos.
+
+### Atlas Reader LoRA Lab
+
+[Atlas Reader LoRA Lab](https://github.com/nawnie/atlas-lora-adapter) tests whether a small QLoRA adapter can learn to read structured Atlas context. It is an internal lab, not a production package or universal token-reduction claim.
+
+---
+
+## How I work
+
+- Consumer hardware first: RTX 4070 Ti Super, RTX 4070 Laptop, Windows setups, local paths, and VRAM limits shape the design.
+- Source-backed answers: AI tools should retrieve project knowledge before guessing.
+- Recorded limits: demos are useful only when the failure cases and claims are written down.
+- Local runtime boundaries: models, outputs, SDKs, and private traces should stay local unless the repo says otherwise.
 
 ---
 
@@ -179,14 +131,14 @@ The goal is not just to make demos. The goal is to record what works, what fails
   <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
   <img src="https://img.shields.io/badge/ComfyUI-local%20AI-black?style=flat-square" alt="ComfyUI"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/Windows-local%20workflow-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
+  <img src="https://img.shields.io/badge/Windows-local%20workflow-0078D6?style=flat-square&logo=windows" alt="Windows"/>
 </p>
 
 ---
 
-## Support the Work
+## Support the work
 
-If Atlas, AIWF Studio, or any of my local AI notes/tools save you time, you can support continued development:
+If AIWF Studio, Atlas, MoK, or my local AI notes save you setup time, you can support continued development:
 
 <p>
   <a href="https://venmo.com/code?user_id=4526061123536861189&created=1779356130">
@@ -198,5 +150,5 @@ If Atlas, AIWF Studio, or any of my local AI notes/tools save you time, you can 
 
 <p align="center">
   <strong>AI Without Fear</strong><br/>
-  <em>Practical local AI for real people, on real hardware.</em>
+  <em>Local AI tools for real people, on real hardware.</em>
 </p>
