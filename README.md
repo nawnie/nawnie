@@ -47,7 +47,7 @@ The public work is split into connected parts. AIWF Studio is the creative app. 
   <a href="https://github.com/nawnie/AIWF-Studio">
     <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Studio-00b894?style=for-the-badge" alt="AIWF Studio repo"/>
   </a>
-  <img src="https://img.shields.io/badge/Status-early%20public%20build-yellow?style=for-the-badge" alt="Early public build"/>
+  <img src="https://img.shields.io/badge/Status-active%20public%20build-yellow?style=for-the-badge" alt="Active public build"/>
 </p>
 
 AIWF Studio is the main public creative build right now: a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
@@ -64,7 +64,7 @@ What AIWF Studio is working toward:
 - A Pro UI that is quieter and easier to live in than the older all-in-one Gradio layout.
 - Runtime notes, smoke tests, and benchmark receipts that separate working routes from experiments.
 
-Status: early public build. Not a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.
+Status: active public build. Not a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.
 
 [View AIWF Studio](https://github.com/nawnie/AIWF-Studio)
 
@@ -76,7 +76,7 @@ Status: early public build. Not a finished replacement for AUTOMATIC1111, Forge,
   <a href="https://github.com/nawnie/ReTrain">
     <img src="https://img.shields.io/badge/View%20Repo-ReTrain-7c3aed?style=for-the-badge" alt="ReTrain repo"/>
   </a>
-  <img src="https://img.shields.io/badge/Status-active%20training%20workbench-yellow?style=for-the-badge" alt="Active training workbench"/>
+  <img src="https://img.shields.io/badge/Status-active%20public%20build-yellow?style=for-the-badge" alt="Active public build"/>
 </p>
 
 ReTrain is the main training-side project: a local-first workbench for consumer GPU fine-tuning with no-code controls, safety gates, and readable run receipts.
@@ -94,7 +94,7 @@ What ReTrain is working toward:
 - Dataset recipe builders, vision dataset export, model inventory, and VRAM checks before expensive runs.
 - JSON-friendly backend workers so training runs can feed dashboards, receipts, and later routing evaluation.
 
-Status: active training workbench. The current public focus is LLM/chat/LoRA training on local hardware, not a finished general-purpose training platform.
+Status: active public build. The current public focus is LLM/chat/LoRA training on local hardware, not a finished general-purpose training platform.
 
 [View ReTrain](https://github.com/nawnie/ReTrain)
 
