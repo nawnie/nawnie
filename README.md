@@ -33,7 +33,9 @@
 
 I build local AI tools for people running real machines at home. The target is not a clean cloud demo. It is a Windows box with an RTX GPU, mixed model folders, broken paths, and a user who still wants the tool to work.
 
-AI Without Fear is the umbrella for that work: local creative AI, grounded retrieval, model routing, and training interfaces that normal users can inspect.
+AI Without Fear is the umbrella for that work: local creative AI, grounded retrieval, model routing, and training interfaces that normal users can inspect. The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
+
+The public work is split into a few connected parts. AIWF Studio is the creative app. Atlas is the grounded project memory. Model Operating Kernel is the model routing layer. ReTrain is the training workbench. They are separate repos because each problem needs its own tests, docs, and failure notes, but they are meant to support the same local-first workflow.
 
 ---
 
@@ -48,9 +50,19 @@ AI Without Fear is the umbrella for that work: local creative AI, grounded retri
   <img src="https://img.shields.io/badge/Status-early%20public%20build-yellow?style=for-the-badge" alt="Early public build"/>
 </p>
 
-AIWF Studio is a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
+AIWF Studio is the main public build right now: a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
 
-It rebuilds the familiar Stable Diffusion web UI idea with typed requests, explicit backend services, repo-local model folders, and less global state. The public branch focuses on image generation, inpaint, ControlNet, enhancement, segmentation, Wan video, LTX, Flux, and the newer React Pro UI.
+It rebuilds the familiar Stable Diffusion web UI idea around explicit backend services, typed requests, repo-local model folders, and fewer hidden globals. The goal is not to hide complexity. The goal is to make local generation easier to inspect when something breaks.
+
+The app has two surfaces. Pro is the cleaner FastAPI and React app for normal use. Gradio Lab is the wider test surface where new image, video, model, and post-processing paths usually land first. Both share the same local model folders, settings, output history, and runtime services.
+
+What AIWF Studio is working toward:
+
+- Local model discovery for Stable Diffusion, SDXL, SD3.5, Flux, Wan, LTX, LoRAs, VAEs, ControlNet, SAM, and enhancement models.
+- Image workflows for txt2img, img2img, inpaint, ControlNet, segmentation, enhancement, metadata, and prompt helpers.
+- Video workflows for Wan, LTX, RIFE interpolation, ReActor post-processing, NVIDIA VSR/Video Effects SDK routes, and generated audio muxing.
+- A Pro UI that is quieter and easier to live in than the older all-in-one Gradio layout.
+- Runtime notes, smoke tests, and benchmark receipts that separate working routes from experiments.
 
 Status: early public build. Not a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.
 
