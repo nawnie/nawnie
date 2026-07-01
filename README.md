@@ -13,8 +13,8 @@
   <a href="https://github.com/nawnie/AIWF-Studio">
     <img src="https://img.shields.io/badge/AIWF%20Studio-local%20creative%20AI-00b894?style=for-the-badge" alt="AIWF Studio"/>
   </a>
-  <a href="https://github.com/nawnie/ai-without-fear">
-    <img src="https://img.shields.io/badge/Atlas-grounded%20retrieval-orange?style=for-the-badge" alt="AIWF Research Atlas"/>
+  <a href="https://github.com/nawnie/ReTrain">
+    <img src="https://img.shields.io/badge/ReTrain-consumer%20GPU%20training-7c3aed?style=for-the-badge" alt="ReTrain"/>
   </a>
   <a href="https://github.com/nawnie/Model-Operating-Kernel">
     <img src="https://img.shields.io/badge/MoK-model%20runtime-blue?style=for-the-badge" alt="Model Operating Kernel"/>
@@ -23,7 +23,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Hardware-RTX%204070%20Ti%20Super%20%7C%20RTX%204070%20Laptop-76b900?style=flat-square" alt="Hardware"/>
-  <img src="https://img.shields.io/badge/Focus-local%20AI%20%7C%20RAG%20%7C%20diffusion-blue?style=flat-square" alt="Focus"/>
+  <img src="https://img.shields.io/badge/Focus-local%20AI%20%7C%20training%20%7C%20diffusion-blue?style=flat-square" alt="Focus"/>
   <img src="https://img.shields.io/badge/Location-North%20Carolina%2C%20US-555?style=flat-square" alt="Location"/>
 </p>
 
@@ -33,9 +33,9 @@
 
 I build local AI tools for people running real machines at home. The target is not a clean cloud demo. It is a Windows box with an RTX GPU, mixed model folders, broken paths, and a user who still wants the tool to work.
 
-AI Without Fear is the umbrella for that work: local creative AI, grounded retrieval, model routing, and training interfaces that normal users can inspect. The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
+AI Without Fear is the umbrella for that work: local creative AI, local training, model routing, and grounded project memory that normal users can inspect. The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
 
-The public work is split into a few connected parts. AIWF Studio is the creative app. Atlas is the grounded project memory. Model Operating Kernel is the model routing layer. ReTrain is the training workbench. They are separate repos because each problem needs its own tests, docs, and failure notes, but they are meant to support the same local-first workflow.
+The public work is split into connected parts. AIWF Studio is the creative app. ReTrain is the training workbench and the main new focus. Model Operating Kernel is the model routing layer. Atlas supports the stack as source-backed project memory. They are separate repos because each problem needs its own tests, docs, and failure notes, but they are meant to support the same local-first workflow.
 
 ---
 
@@ -50,7 +50,7 @@ The public work is split into a few connected parts. AIWF Studio is the creative
   <img src="https://img.shields.io/badge/Status-early%20public%20build-yellow?style=for-the-badge" alt="Early public build"/>
 </p>
 
-AIWF Studio is the main public build right now: a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
+AIWF Studio is the main public creative build right now: a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
 
 It rebuilds the familiar Stable Diffusion web UI idea around explicit backend services, typed requests, repo-local model folders, and fewer hidden globals. The goal is not to hide complexity. The goal is to make local generation easier to inspect when something breaks.
 
@@ -70,22 +70,33 @@ Status: early public build. Not a finished replacement for AUTOMATIC1111, Forge,
 
 ---
 
-### AIWF Research Atlas
+### ReTrain
 
 <p>
-  <a href="https://github.com/nawnie/ai-without-fear">
-    <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Atlas-orange?style=for-the-badge" alt="AIWF Research Atlas repo"/>
+  <a href="https://github.com/nawnie/ReTrain">
+    <img src="https://img.shields.io/badge/View%20Repo-ReTrain-7c3aed?style=for-the-badge" alt="ReTrain repo"/>
   </a>
-  <img src="https://img.shields.io/badge/Status-v3.3%20research%20preview-blue?style=for-the-badge" alt="Research preview"/>
+  <img src="https://img.shields.io/badge/Status-active%20training%20workbench-yellow?style=for-the-badge" alt="Active training workbench"/>
 </p>
 
-AIWF Research Atlas is a source-backed retrieval corpus for local AI assistants.
+ReTrain is the main training-side project: a local-first workbench for consumer GPU fine-tuning with no-code controls, safety gates, and readable run receipts.
 
-Atlas keeps source policy, retrieval cards, topic lanes, Gradio 6 material, ComfyUI notes, evaluation prompts, and provenance files in one indexable tree. The job is simple: make assistants check grounded project context before they invent setup steps.
+The first serious lane is LLM and chat fine-tuning. ReTrain is building around QLoRA, full SFT with explicit tune-scope controls, alignment methods through TRL, model download staging, Hugging Face model selection, TensorBoard, dataset recipes, and dry-run receipts before training starts.
 
-Status: v3.3 research preview. Fast-moving package, model, API, benchmark, license, and compatibility claims still need live source checks before use.
+It is also public proof-of-work for RNV1. RNV1 keeps the core implementation private, while ReTrain shows the software being built and tested in public: model setup, training controls, run outputs, and a path toward a richer React/FastAPI training board.
 
-[View AIWF Research Atlas](https://github.com/nawnie/ai-without-fear)
+What ReTrain is working toward:
+
+- Gradio 6 as the first practical training surface, with a React/FastAPI board growing beside it.
+- QLoRA as the first consumer GPU training engine.
+- Full SFT controls for full model, last-layer, and output-head tuning.
+- Alignment lanes for DPO, GRPO, reward modeling, KTO, and RLOO where the local TRL runtime supports them.
+- Dataset recipe builders, vision dataset export, model inventory, and VRAM checks before expensive runs.
+- JSON-friendly backend workers so training runs can feed dashboards, receipts, and later routing evaluation.
+
+Status: active training workbench. The current public focus is LLM/chat/LoRA training on local hardware, not a finished general-purpose training platform.
+
+[View ReTrain](https://github.com/nawnie/ReTrain)
 
 ---
 
@@ -108,11 +119,15 @@ Status: early runnable slice. The next job is to collect real local traces, meas
 
 ---
 
-## Newer 2026 work
+## Supporting work
 
-### ReTrain
+### AIWF Research Atlas
 
-[ReTrain](https://github.com/nawnie/ReTrain) is a local-first training workbench for consumer GPU fine-tuning. It is also public proof-of-work for RNV1: working software we built to train, test, and document local model-improvement flows instead of only describing the idea.
+[AIWF Research Atlas](https://github.com/nawnie/ai-without-fear) is the source-backed retrieval corpus behind the AIWF stack. It keeps source policy, retrieval cards, topic lanes, Gradio 6 material, ComfyUI notes, evaluation prompts, and provenance files in one indexable tree.
+
+Atlas is still useful, but it is now supporting infrastructure rather than the main public focus. Its job is to make assistants check grounded project context before they invent setup steps.
+
+Status: v3.3 research preview. Fast-moving package, model, API, benchmark, license, and compatibility claims still need live source checks before use.
 
 ### RNV1
 
@@ -150,7 +165,7 @@ Status: early runnable slice. The next job is to collect real local traces, meas
 
 ## Support the work
 
-If AIWF Studio, Atlas, MoK, or my local AI notes save you setup time, you can support continued development:
+If AIWF Studio, ReTrain, MoK, Atlas, or my local AI notes save you setup time, you can support continued development:
 
 <p>
   <a href="https://venmo.com/code?user_id=4526061123536861189&created=1779356130">
