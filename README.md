@@ -14,15 +14,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nawnie/AIWF-Studio">AIWF Studio</a> |
-  <a href="https://github.com/nawnie/ReTrain">ReTrain</a> |
-  <a href="https://github.com/nawnie/Model-Operating-Kernel">Model Operating Kernel</a> |
+  <a href="https://github.com/nawnie/AIWF-Studio">AIWF Studio</a><br/>
+  <a href="https://github.com/nawnie/ReTrain">ReTrain</a><br/>
+  <a href="https://github.com/nawnie/Model-Operating-Kernel">Model Operating Kernel</a><br/>
   <a href="https://github.com/nawnie/ai-without-fear">AIWF Research Atlas</a>
 </p>
 
 <p align="center">
   RTX 4070 Ti Super + RTX 4070 Laptop<br/>
-  Windows local AI | diffusion | consumer GPU training | model routing | source-backed retrieval
+  Windows local AI | diffusion | consumer GPU training<br/>
+  model routing | source-backed retrieval
 </p>
 
 ---
