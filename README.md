@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <a href="https://www.aiembeddedsystems.com"><strong>www.aiembeddedsystems.com</strong></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/nawnie/AIWF-Studio">
     <img src="https://img.shields.io/badge/AIWF%20Studio-local%20creative%20AI-00b894?style=for-the-badge" alt="AIWF Studio"/>
   </a>
@@ -18,6 +22,9 @@
   </a>
   <a href="https://github.com/nawnie/Model-Operating-Kernel">
     <img src="https://img.shields.io/badge/MoK-model%20runtime-blue?style=for-the-badge" alt="Model Operating Kernel"/>
+  </a>
+  <a href="https://www.aiembeddedsystems.com">
+    <img src="https://img.shields.io/badge/AI%20Embedded%20Systems-website-111111?style=for-the-badge" alt="AI Embedded Systems website"/>
   </a>
 </p>
 
@@ -33,7 +40,7 @@
 
 I build local AI tools for people running real machines at home. The target is not a clean cloud demo. It is a Windows box with an RTX GPU, mixed model folders, broken paths, and a user who still wants the tool to work.
 
-AI Without Fear is the umbrella for that work: local creative AI, local training, model routing, and grounded project memory that normal users can inspect. The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
+AI Without Fear is the umbrella for that work. AI Embedded Systems is the public build label behind it: [www.aiembeddedsystems.com](https://www.aiembeddedsystems.com). The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
 
 The public work is split into connected parts. AIWF Studio is the creative app. ReTrain is the training workbench and the main new focus. Model Operating Kernel is the model routing layer. Atlas supports the stack as source-backed project memory. They are separate repos because each problem needs its own tests, docs, and failure notes, but they are meant to support the same local-first workflow.
 
@@ -56,12 +63,13 @@ It rebuilds the familiar Stable Diffusion web UI idea around explicit backend se
 
 The app has two surfaces. Pro is the cleaner FastAPI and React app for normal use. Gradio Lab is the wider test surface where new image, video, model, and post-processing paths usually land first. Both share the same local model folders, settings, output history, and runtime services.
 
-What AIWF Studio is working toward:
+What AIWF Studio is shipping or proving on `main`:
 
 - Local model discovery for Stable Diffusion, SDXL, SD3.5, Flux, Wan, LTX, LoRAs, VAEs, ControlNet, SAM, and enhancement models.
 - Image workflows for txt2img, img2img, inpaint, ControlNet, segmentation, enhancement, metadata, and prompt helpers.
 - Video workflows for Wan, LTX, RIFE interpolation, ReActor post-processing, NVIDIA VSR/Video Effects SDK routes, and generated audio muxing.
-- A Pro UI that is quieter and easier to live in than the older all-in-one Gradio layout.
+- A Pro UI with Create, Workflow builder, Model Families, Models, Data, Monitor, Logs, Settings, and newer workspace screens in active integration.
+- User extensions through `plugins/`, including REST routes, Gradio tabs, and event hooks.
 - Runtime notes, smoke tests, and benchmark receipts that separate working routes from experiments.
 
 Status: active public build. Not a finished replacement for AUTOMATIC1111, Forge, or ComfyUI.
