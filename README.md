@@ -14,24 +14,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/nawnie/AIWF-Studio">
-    <img src="https://img.shields.io/badge/AIWF%20Studio-local%20creative%20AI-00b894?style=for-the-badge" alt="AIWF Studio"/>
-  </a>
-  <a href="https://github.com/nawnie/ReTrain">
-    <img src="https://img.shields.io/badge/ReTrain-consumer%20GPU%20training-7c3aed?style=for-the-badge" alt="ReTrain"/>
-  </a>
-  <a href="https://github.com/nawnie/Model-Operating-Kernel">
-    <img src="https://img.shields.io/badge/MoK-model%20runtime-blue?style=for-the-badge" alt="Model Operating Kernel"/>
-  </a>
-  <a href="https://www.aiembeddedsystems.com">
-    <img src="https://img.shields.io/badge/AI%20Embedded%20Systems-website-111111?style=for-the-badge" alt="AI Embedded Systems website"/>
-  </a>
+  <a href="https://github.com/nawnie/AIWF-Studio">AIWF Studio</a> |
+  <a href="https://github.com/nawnie/ReTrain">ReTrain</a> |
+  <a href="https://github.com/nawnie/Model-Operating-Kernel">Model Operating Kernel</a> |
+  <a href="https://github.com/nawnie/ai-without-fear">AIWF Research Atlas</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Hardware-RTX%204070%20Ti%20Super%20%7C%20RTX%204070%20Laptop-76b900?style=flat-square" alt="Hardware"/>
-  <img src="https://img.shields.io/badge/Focus-local%20AI%20%7C%20training%20%7C%20diffusion-blue?style=flat-square" alt="Focus"/>
-  <img src="https://img.shields.io/badge/Location-North%20Carolina%2C%20US-555?style=flat-square" alt="Location"/>
+  RTX 4070 Ti Super + RTX 4070 Laptop<br/>
+  Windows local AI | diffusion | consumer GPU training | model routing | source-backed retrieval
 </p>
 
 ---
@@ -48,14 +39,14 @@ The public work is split into connected parts. AIWF Studio is the creative app. 
 
 ## Featured work
 
-### AIWF Studio
+| Project | Focus | Status |
+| --- | --- | --- |
+| [AIWF Studio](https://github.com/nawnie/AIWF-Studio) | Local creative AI for image, video, and post-processing | Active public build |
+| [ReTrain](https://github.com/nawnie/ReTrain) | Consumer GPU fine-tuning workbench | Active public build |
+| [Model Operating Kernel](https://github.com/nawnie/Model-Operating-Kernel) | Local runtime and expert routing layer | Early runnable slice |
+| [AIWF Research Atlas](https://github.com/nawnie/ai-without-fear) | Source-backed project memory and retrieval corpus | Research preview |
 
-<p>
-  <a href="https://github.com/nawnie/AIWF-Studio">
-    <img src="https://img.shields.io/badge/View%20Repo-AIWF%20Studio-00b894?style=for-the-badge" alt="AIWF Studio repo"/>
-  </a>
-  <img src="https://img.shields.io/badge/Status-active%20public%20build-yellow?style=for-the-badge" alt="Active public build"/>
-</p>
+### AIWF Studio
 
 AIWF Studio is the main public creative build right now: a local-first workspace for image generation, inpainting, video, and video-audio post-processing on Windows and NVIDIA GPUs.
 
@@ -80,13 +71,6 @@ Status: active public build. Not a finished replacement for AUTOMATIC1111, Forge
 
 ### ReTrain
 
-<p>
-  <a href="https://github.com/nawnie/ReTrain">
-    <img src="https://img.shields.io/badge/View%20Repo-ReTrain-7c3aed?style=for-the-badge" alt="ReTrain repo"/>
-  </a>
-  <img src="https://img.shields.io/badge/Status-active%20public%20build-yellow?style=for-the-badge" alt="Active public build"/>
-</p>
-
 ReTrain is the main training-side project: a local-first workbench for consumer GPU fine-tuning with no-code controls, safety gates, and readable run receipts.
 
 The first serious lane is LLM and chat fine-tuning. ReTrain is building around QLoRA, full SFT with explicit tune-scope controls, alignment methods through TRL, model download staging, Hugging Face model selection, TensorBoard, dataset recipes, and dry-run receipts before training starts.
@@ -109,13 +93,6 @@ Status: active public build. The current public focus is LLM/chat/LoRA training 
 ---
 
 ### Model Operating Kernel
-
-<p>
-  <a href="https://github.com/nawnie/Model-Operating-Kernel">
-    <img src="https://img.shields.io/badge/View%20Repo-Model%20Operating%20Kernel-blue?style=for-the-badge" alt="Model Operating Kernel repo"/>
-  </a>
-  <img src="https://img.shields.io/badge/Status-early%20runnable%20slice-yellow?style=for-the-badge" alt="Early runnable slice"/>
-</p>
 
 Model Operating Kernel is a local runtime layer for coordinating model and expert backends on consumer hardware.
 
@@ -158,16 +135,7 @@ Status: v3.3 research preview. Fast-moving package, model, API, benchmark, licen
 
 ## Stack
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/NVIDIA%20RTX-VFX%20SDK-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA RTX / VFX SDK"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Gradio-FF7C00?style=flat-square" alt="Gradio"/>
-  <img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="Hugging Face"/>
-  <img src="https://img.shields.io/badge/ComfyUI-local%20AI-black?style=flat-square" alt="ComfyUI"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/Windows-local%20workflow-0078D6?style=flat-square&logo=windows" alt="Windows"/>
-</p>
+Python, PyTorch, Diffusers, Gradio, FastAPI, React, TypeScript, Hugging Face tooling, ComfyUI workflows, Git, Windows, NVIDIA RTX, and local model folders.
 
 ---
 
@@ -175,11 +143,7 @@ Status: v3.3 research preview. Fast-moving package, model, API, benchmark, licen
 
 If AIWF Studio, ReTrain, MoK, Atlas, or my local AI notes save you setup time, you can support continued development:
 
-<p>
-  <a href="https://venmo.com/code?user_id=4526061123536861189&created=1779356130">
-    <img src="https://img.shields.io/badge/Support-Venmo%20%40Shawn--Ohagan--4-3D95CE?style=for-the-badge" alt="Support on Venmo"/>
-  </a>
-</p>
+[Support on Venmo](https://venmo.com/code?user_id=4526061123536861189&created=1779356130)
 
 ---
 
