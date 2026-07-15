@@ -10,7 +10,9 @@
 </p>
 
 <p align="center">
-  <a href="https://www.aiembeddedsystems.com"><strong>www.aiembeddedsystems.com</strong></a>
+  <a href="https://aiembeddedsystems.com/"><strong>AI Embedded Systems</strong></a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="https://myhome-studios.com/"><strong>My Home Studios</strong></a>
 </p>
 
 <p align="center">
@@ -32,7 +34,9 @@
 
 I build local AI tools for people running real machines at home. The target is not a clean cloud demo. It is a Windows box with an RTX GPU, mixed model folders, broken paths, and a user who still wants the tool to work.
 
-AI Without Fear is the umbrella for that work. AI Embedded Systems is the public build label behind it: [www.aiembeddedsystems.com](https://www.aiembeddedsystems.com). The point is control. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise.
+AI Without Fear is the umbrella for that work. [AI Embedded Systems](https://aiembeddedsystems.com/) turns it into private AI and embedded systems for real-world operations. [My Home Studios](https://myhome-studios.com/) carries the same practical approach into hotel-to-apartment conversion: clear property workflows, traceable reporting, and measurable operating outcomes.
+
+The common thread is useful systems built around the real environment. Models, outputs, logs, SDKs, and private traces should stay local unless a repo clearly says otherwise. Business tools should be just as concrete about their sources, limits, and next actions.
 
 The public work is split into connected parts. AIWF Studio is the creative app. ReTrain is the training workbench and the main new focus. Model Operating Kernel is the model routing layer. Atlas supports the stack as source-backed project memory. They are separate repos because each problem needs its own tests, docs, and failure notes, but they are meant to support the same local-first workflow.
 
@@ -150,5 +154,7 @@ If AIWF Studio, ReTrain, MoK, Atlas, or my local AI notes save you setup time, y
 
 <p align="center">
   <strong>AI Without Fear</strong><br/>
-  <em>Local AI tools for real people, on real hardware.</em>
+  <em>Practical systems for real hardware and real-world operations.</em><br/>
+  <a href="https://aiembeddedsystems.com/">AI Embedded Systems</a> &nbsp;|&nbsp;
+  <a href="https://myhome-studios.com/">My Home Studios</a>
 </p>
