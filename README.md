@@ -24,6 +24,9 @@ My background is in operations leadership, so I tend to engineer around handoffs
 
 | Project | What it demonstrates |
 | --- | --- |
+| **[Kairo](https://github.com/nawnie/kairo)** | Evidence-first program inspection with bounded learning, reusable state, and explicit abstention when evidence is insufficient |
+| **[FORMANT](https://github.com/nawnie/formant-studio)** | Local-first Web Audio product design with measured export and an MCP-connected collaborator surface |
+| **[Audio Equalizer](https://github.com/nawnie/audio-equalizer)** | Native Windows audio tooling with live spectrum analysis, safe routing, and high-DPI UI |
 | **[AIWF Studio](https://github.com/nawnie/AIWF-Studio)** | Local-first Windows creative AI workspace with FastAPI + React/TypeScript, replaceable local backends, model-family routing, install/upgrade safeguards, benchmarking, and renderer QA |
 | **[Atlas Core](https://github.com/nawnie/atlas-core)** | Deterministic agent/runtime infrastructure: canonical events, provenance, approval gates, replay/idempotency, recovery, rollback evidence, and bounded provider interfaces |
 | **[Model Operating Kernel](https://github.com/nawnie/Model-Operating-Kernel)** | Local model/tool orchestration with explicit routing policies, VRAM budgeting, multiple backend lanes, and replayable JSONL traces |
@@ -42,8 +45,8 @@ My background is in operations leadership, so I tend to engineer around handoffs
 | Project | Signal |
 | --- | --- |
 | **[Model Speedometer](https://github.com/nawnie/model-speedometer)** | Native Windows WPF telemetry for observed local-AI throughput, VRAM, CPU, RAM, and local runtime discovery |
-| **[ReTrain](https://github.com/nawnie/ReTrain)** | Windows-first local fine-tuning workbench for supported SFT, LoRA, QLoRA, Seq2Seq, and masked-LM paths with readiness checks and receipts |
 | **[Shawn Core](https://github.com/nawnie/shawn-core-mcp)** | Evidence-backed agent/runtime prototypes with schema enforcement, validation gates, workbench/control surfaces, and evidence databases |
+| **[ReTrain](https://github.com/nawnie/ReTrain)** | Windows-first local fine-tuning workbench; the public README distinguishes supported paths from roadmap work |
 | **Creation Kit MCP + Lore Atlas** *(private)* | MCP/tool design, domain modeling, provenance-aware corpus engineering, retrieval policy, and deterministic validation |
 | **AI Phone Intake** *(private)* | Role-aware workflow control plane with consent/approval gates, deterministic simulation, fail-closed queues, and typed OpenAPI/MCP validation |
 
