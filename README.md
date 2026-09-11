@@ -32,10 +32,10 @@ My background is in operations leadership, so I tend to engineer around handoffs
 
 ## Engineering signals
 
-- **AIWF Studio alpha.5:** 182 backend tests passed, 18 frontend request/wire tests passed, compiled frontend passed, and 9/9 required renderer QA checks passed.
-- **A.C.M.E. Mobile:** repeated physical-device validation with exact built-versus-installed APK hash checks, emulator/device gates, and 11/11 real-engine parity runs in the verified status history.
-- **Kairo R22:** learned and reused a six-action CSV workflow, adapted after action bindings changed, and produced nine reports matching independently frozen expected bytes and totals.
-- **MoK2 CAIS slice:** 34 Python unit tests passed, with unproven Windows/GPU integration explicitly kept outside the claim boundary.
+- **AIWF Studio:** The public repository documents local-first creative AI infrastructure, installation safeguards, benchmarking, and renderer QA. See the repository's current receipts for exact version-specific counts.
+- **A.C.M.E. Mobile:** private edge-AI case study with device, emulator, installation, and real-engine validation documented in its verified status history.
+- **Kairo:** private research program with evidence-gated experiments and explicit limits on what the results establish.
+- **MoK2 CAIS slice:** private systems research with integration boundaries kept explicit rather than implied.
 
 ## Role-specific proof shelf
 
@@ -64,7 +64,7 @@ My background is in operations leadership, so I tend to engineer around handoffs
 
 I am most interested in the layer where models meet real machines. The useful question is not only *can the model do it?* It is also: **what state changed, what evidence do we have, what happens when it fails, and can a person recover the system without rebuilding the universe?**
 
-I am targeting **Applied AI, AI Developer Tools, Agent Systems, Local Inference, Edge AI, and ML Systems Prototyping** roles.
+I am targeting **Applied AI, AI Developer Tools, Agent Systems, Local Inference, Edge AI, and ML Systems Prototyping** roles, with a preference for remote teams building reliable AI products.
 
 > Historical forks, mirrors, upstream experiments, and imported projects remain visible on this account as part of the learning trail, but they are not presented as original engineering. The projects above are the work I want evaluated first.
 
