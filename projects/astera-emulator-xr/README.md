@@ -4,6 +4,25 @@ Experimental VR/stereo bridge for bringing **3DS, DS, and GBA emulation into Ast
 
 > Status: shared bridge API + emulator integration plan published. Emulator-specific forks and physical-device captures are next.
 
+
+## CLI download
+
+Download only this project folder from the public repository.
+
+### PowerShell
+
+```powershell
+irm https://raw.githubusercontent.com/nawnie/nawnie/main/projects/astera-emulator-xr/install.ps1 | iex
+```
+
+### Linux / macOS / Git Bash
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/nawnie/nawnie/main/projects/astera-emulator-xr/install.sh | bash
+```
+
+Both installers prefer a sparse Git checkout so they do not clone the rest of the profile repository. If Git is unavailable, they fall back to the repository ZIP and copy out only `projects/astera-emulator-xr`.
+
 ## Geometry source by platform
 
 | Platform | Preferred geometry source |
