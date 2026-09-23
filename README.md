@@ -36,6 +36,7 @@ My background is in operations leadership, so I tend to engineer around handoffs
 
 | Project | What it demonstrates |
 | --- | --- |
+| **[Astera Emulator XR](https://github.com/nawnie/nawnie/tree/main/projects/astera-emulator-xr)** | Phone-first VR/emulator bridge using native 3DS stereo, DS Z-buffer depth, GBA/DS layer metadata, and AI fallback behind a shared XR compositor |
 | **A.C.M.E. Mobile** *(private case study)* | Android edge-AI work validated on physical Galaxy S25 Ultra hardware and emulator, including local inference, thermal pacing, signed APK verification, instrumentation, and real-engine parity testing |
 | **[FORMANT](https://github.com/nawnie/formant-studio)** | Local-first Web Audio product design with measured WAV export and an MCP-connected collaborator surface |
 | **[Audio Equalizer](https://github.com/nawnie/audio-equalizer)** | Native Windows/PySide6 audio tooling with live spectrum analysis, safe routing, crash recovery, and high-DPI UI |
