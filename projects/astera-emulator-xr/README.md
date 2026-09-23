@@ -67,6 +67,15 @@ Modes:
 - **AI** — RGB monocular depth
 - **Hybrid** — hardware layer metadata + AI refinement
 
+
+## Additional native-3D target: Pocket Voxel
+
+[Pocket Voxel](https://github.com/pocket-stack/pocket-voxel) is especially interesting because it already owns a retained 3D voxel scene. Astera would not need AR or AI depth: an Android host can render true left/right eye views and pass them directly into the shared XR bridge.
+
+Pocket Voxel also has active 3DS dual-screen host work, making it a useful reference for handheld renderer integration.
+
+See [docs/POCKET_VOXEL.md](docs/POCKET_VOXEL.md).
+
 ## Shared bridge
 
 The portable API supports four input classes:
