@@ -30,7 +30,7 @@ With a working browser, set `PORTFOLIO_QA_DIR` to a temporary output folder to c
 
 ## Publication boundary
 
-This folder is a GitHub-ready draft. It has not been published by creating it. Review repository visibility and rights before uploading. No open-source license is granted here.
+This folder was published in the public `nawnie/nawnie` repository on 6 November 2026 at `projects/client-work-samples/`. That does not by itself establish a hosted GitHub Pages website; no Pages configuration was changed or hosted site verified. No open-source license is granted here.
 
 The GitHub-only link uses `id="github-header"` and `class="github-only-link"`. Any Upwork-upload edition must physically remove that outbound anchor; hiding it with CSS is not a sanitization step. The default Upwork handoff should use contact-free case-study PDFs, cover images, and project descriptions, not the website source.
 

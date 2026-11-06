@@ -40,6 +40,6 @@ These are AI-assisted portfolio samples built around my operational requirements
 
 ## Keeping publication deliberate
 
-This folder is prepared for an additive placement under `projects/client-work-samples/` in the existing profile repository. It does not replace the current profile README. Publishing, changing repository visibility, enabling Pages and granting an open-source license require a separate owner decision. No license is granted by this draft.
+Published on 6 November 2026 under `projects/client-work-samples/` in [nawnie/nawnie](https://github.com/nawnie/nawnie) as an additive portfolio update. The profile README gained a selected-work section; the earlier profile content and projects were preserved. The publication commit was `2e5f064fe96f552c30a035411edf3780b3bf0331`. No repository visibility, license, or Pages configuration was changed. This repository folder is public, but no open-source license is granted here.
 
 The Upwork upload pack is a separate contact-free set. Do not attach this repository bundle, source README or external profile links to an Upwork portfolio without a fresh review of the destination and its rules.
