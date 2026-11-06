@@ -1,0 +1,44 @@
+{
+  "provenance": {
+    "kind": "synthetic",
+    "createdFor": "Original public-safe portfolio demonstration",
+    "observedClientData": false,
+    "date": "2026-11-06",
+    "sourceFixture": "examples/fixture.json",
+    "method": "Deterministic arithmetic and status rules; not historical client outcomes"
+  },
+  "staffing": {
+    "occupiedRooms": 80,
+    "departures": 30,
+    "stayovers": 50,
+    "baseMinutes": 1650,
+    "adjustedMinutes": 1815,
+    "laborHours": 30.25,
+    "staffRequired": 6
+  },
+  "property": {
+    "noi": 360000,
+    "dscr": 1.5,
+    "reserveGap": 50000,
+    "flags": ["renovation_reserve_gap"]
+  },
+  "rooms": {
+    "total": 6,
+    "available": 2,
+    "occupied": 2,
+    "exceptionCount": 2,
+    "availableRooms": ["101", "106"],
+    "exceptions": [
+      { "roomId": "102", "status": "not_ready" },
+      { "roomId": "105", "status": "out_of_service" }
+    ],
+    "rooms": [
+      { "roomId": "101", "pms": "vacant", "housekeeping": "clean", "status": "available" },
+      { "roomId": "102", "pms": "vacant", "housekeeping": "dirty", "status": "not_ready" },
+      { "roomId": "103", "pms": "occupied", "housekeeping": "clean", "status": "occupied" },
+      { "roomId": "104", "pms": "occupied", "housekeeping": "clean", "status": "occupied" },
+      { "roomId": "105", "pms": "vacant", "housekeeping": "out_of_service", "status": "out_of_service" },
+      { "roomId": "106", "pms": "vacant", "housekeeping": "clean", "status": "available" }
+    ]
+  }
+}

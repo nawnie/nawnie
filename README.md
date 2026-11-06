@@ -20,6 +20,24 @@ I build the systems that models have to live inside: routing, evaluation, proven
 
 My background is in operations leadership, so I tend to engineer around handoffs, exceptions, audit trails, recovery paths, limited resources, and users who cannot stop the operation to debug the software.
 
+## Selected client-work samples
+
+These are inspectable portfolio examples built around problems I have handled in hotel and multi-site operations. The first three have working, deterministic demos using fictional inputs; the remaining studies distinguish architecture and product plans from finished deployments.
+
+<p align="center">
+  <a href="projects/client-work-samples/case-studies/01_predictive_operations.pdf"><img src="projects/client-work-samples/assets/01_predictive_operations.svg" width="260" alt="Hotel staffing planner working demonstration"></a>
+  &nbsp;
+  <a href="projects/client-work-samples/case-studies/02_property_due_diligence.pdf"><img src="projects/client-work-samples/assets/02_property_due_diligence.svg" width="260" alt="Property operating scenario working demonstration"></a>
+  &nbsp;
+  <a href="projects/client-work-samples/case-studies/03_property_management.pdf"><img src="projects/client-work-samples/assets/03_property_management.svg" width="260" alt="Room readiness audit working demonstration"></a>
+</p>
+
+- **Working demos:** [staffing calculations](projects/client-work-samples/case-studies/01_predictive_operations.md), [property operating screen](projects/client-work-samples/case-studies/02_property_due_diligence.md), and [room-readiness reconciliation](projects/client-work-samples/case-studies/03_property_management.md).
+- **Process and automation samples:** [human-approval workflow](projects/client-work-samples/case-studies/04_ai_workflow.md) and [multi-site operations review](projects/client-work-samples/case-studies/05_multilocation_operations.md).
+- **AI product studies:** [AES Studio](projects/client-work-samples/case-studies/06_aes_studio.md) (experimental MOSS Image generation and Qwen Image 2.1 editing) and [AES ReTrain](projects/client-work-samples/case-studies/07_aes_retrain.md) (proposed Qwen Image 2.1 image preparation/evaluation; no image-training result claimed).
+
+[**Explore the seven case studies, source code, and local interactive demos**](projects/client-work-samples/README.md)
+
 ## Core systems
 
 | Project | What it demonstrates |

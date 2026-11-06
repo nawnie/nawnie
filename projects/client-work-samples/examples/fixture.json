@@ -1,0 +1,31 @@
+{
+  "provenance": {
+    "kind": "synthetic",
+    "createdFor": "Original public-safe portfolio demonstration",
+    "observedClientData": false,
+    "date": "2026-11-06"
+  },
+  "staffing": {
+    "occupiedRooms": 80,
+    "departures": 30,
+    "checkoutMinutes": 30,
+    "stayoverMinutes": 15,
+    "productiveHours": 6,
+    "bufferPct": 10
+  },
+  "property": {
+    "annualRevenue": 1200000,
+    "operatingExpenses": 840000,
+    "annualDebtService": 240000,
+    "renovationBudget": 150000,
+    "reserveCash": 100000
+  },
+  "rooms": [
+    { "roomId": "101", "pms": "vacant", "housekeeping": "clean" },
+    { "roomId": "102", "pms": "vacant", "housekeeping": "dirty" },
+    { "roomId": "103", "pms": "occupied", "housekeeping": "clean" },
+    { "roomId": "104", "pms": "occupied", "housekeeping": "clean" },
+    { "roomId": "105", "pms": "vacant", "housekeeping": "out_of_service" },
+    { "roomId": "106", "pms": "vacant", "housekeeping": "clean" }
+  ]
+}
